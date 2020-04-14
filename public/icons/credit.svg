@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Credit</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Credit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M27.815,20 C27.4,18.84 26.3,18 25,18 L16,18 L16,16 L28,16 L28,20 L27.815,20 Z M25,22 L21,22 C20.57,22 20.187,22.275 20.05,22.684 L18.31,27.906 L12,27.116 L12,16.62 L14,15.62 L14,19 C14,19.553 14.447,20 15,20 L25,20 C25.55,20 26,20.448 26,21 C26,21.552 25.55,22 25,22 Z M16,14 L16,12 L28,12 L28,14 L16,14 Z M29,10 L15,10 C14.447,10 14,10.447 14,11 L14,13.382 L10.552,15.105 C10.212,15.275 10,15.62 10,16 L10,28 C10,28.504 10.376,28.93 10.876,28.992 L18.876,29.992 C18.918,29.997 18.959,30 19.001,30 C19.427,30 19.811,29.73 19.951,29.316 L21.72,24 L25,24 C26.3,24 27.4,23.16 27.815,22 L29,22 C29.552,22 30,21.553 30,21 L30,11 C30,10.447 29.552,10 29,10 Z" id="Shape" fill="#929EAB" fill-rule="nonzero"></path>
+    </g>
+</svg>
