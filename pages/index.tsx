@@ -5,6 +5,7 @@ import Projects from '../components/Home/Projects';
 import WorkingContainer from '../components/Home/Working';
 import PackagesContainer from '../components/Home/Packages';
 import Services from '../components/Home/Services';
+import Footer from '../components/Shared/Footer';
 import styled from 'styled-components';
 import { Flex } from 'reflexbox';
 
@@ -16,6 +17,7 @@ const TopContainer = styled.div`
 const Packages = styled.div`
   background-color: #f8f9fd;
   padding: 50px 0;
+  
 `;
 
 const ProjectsContainer = styled.div`
@@ -29,15 +31,15 @@ const ServicesContainer = styled.div`
 `;
 
 const Banner = styled(Jumbotron)`
-  background-image: url('/static/banner/banner.png');
-  height: 450px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: relative;
   display: flex;
   justify-content: center;
   padding: 100px 0;
+  background-image: url('/static/banner/banner.png');
+  height: 555px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 `;
 
 const PurpleButton = styled.button`
@@ -86,6 +88,7 @@ const IndexPage = () => (
     <ServicesContainer>
       <Services />
     </ServicesContainer>
+    <Footer />
   </Layout>
 );
 

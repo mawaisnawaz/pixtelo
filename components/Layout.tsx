@@ -34,6 +34,7 @@ const RightNavBar = styled(Nav)`
 const PurpleButton = styled.button`
   background-color: #246df8 !important;
   padding: 10px 20px;
+  border-radius: 3px;
   border: none;
   color: white;
 `;
@@ -57,18 +58,12 @@ const Layout: React.FunctionComponent<Props> = ({ children, title = "This is the
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"></link>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/static/css/responsive.css" rel="stylesheet" />
       </Head>
       <style jsx>{`
         * {
-          font-size: 16px;
+          font-size: 1vw;
           font-family: 'Poppins', sans-serif;
-        }
-
-        @media (min-width: 1200px) {
-          .container{
-            max-width:1200px;
-            width:1200px;
-          }
         }
 
         ul {
@@ -134,10 +129,6 @@ const Layout: React.FunctionComponent<Props> = ({ children, title = "This is the
         </nav> */}
       </header>
       {children}
-      <footer>
-        <hr />
-        <span>I'm here to stay (Footer)</span>
-      </footer>
     </div>
   );
 };
