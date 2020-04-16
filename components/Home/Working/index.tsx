@@ -16,6 +16,14 @@ const Container = styled(Flex)`
 const CustomContainer = styled(Flex)`
   height: 300px;
   max-width: 350px;
+
+  &: hover {
+    svg {
+      path {
+        fill: #246df8;
+      }
+    }
+  }
 `;
 
 const getIcon = (icon: any) => {
@@ -31,14 +39,12 @@ const getIcon = (icon: any) => {
   return <ReturnIcon />;
 };
 
-
 const SectionTitle = styled.label`
   color: #232630;
   font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: 1px;
 `;
-
 
 const Title = styled.label`
   font-size: 1rem;
@@ -49,20 +55,23 @@ const Details = styled.label`
   font-size: 0.75rem;
   margin-top: 1rem;
   text-align: center;
+  color: #6f7484;
 `;
 
 const PurpleOutlineButton = styled.button`
   background-color: transparent;
   padding: 10px 20px;
-  border: 1px solid #d7e3fd;
+  border: 2px solid #d8e4fe;
+  border-radius: 3px;
   color: #246df8;
 `;
 
 const BlackOutlineButton = styled.button`
   background-color: transparent;
   padding: 10px 20px;
-  border: 1px solid #e3e5e9;
-  color: #000;
+  border: 2px solid #e4e5e9;
+  border-radius: 3px;
+  color: #505666;
   margin-left: 10px;
 `;
 
@@ -96,12 +105,8 @@ const WorkingContainer = () => (
       </CustomContainer>
     </Flex>
     <Flex justifyContent="center">
-      <PurpleOutlineButton>
-        Browser Jobs
-      </PurpleOutlineButton>
-      <BlackOutlineButton>
-        Browser Freelancers
-      </BlackOutlineButton>
+      <PurpleOutlineButton>Browser Jobs</PurpleOutlineButton>
+      <BlackOutlineButton>Browser Freelancers</BlackOutlineButton>
     </Flex>
   </Container>
 );

@@ -18,7 +18,7 @@ const Category = styled(Flex)`
   height: 250px;
   box-shadow: 0 0 5px rgba(200, 205, 213, 0.18);
   margin: 10px !important;
-  justift-content:center;
+  justift-content: center;
   flex-direction: column;
 `;
 
@@ -38,7 +38,7 @@ const getIcon = (icon: any) => {
 const SectionTitle = styled.label`
   color: #232630;
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 1px;
 `;
 

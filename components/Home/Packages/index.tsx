@@ -32,7 +32,7 @@ const ImgPlaceHolder = styled.label`
 const SectionTitle = styled.label`
   color: #313131;
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 1px;
 `;
 
@@ -51,18 +51,37 @@ const SectionDetails = styled.label`
 const PackageName = styled.label`
   font-size: 1rem;
   margin-bottom: 0;
+  color: #313131;
 `;
 
 const PackageSubTitle = styled.label`
   font-size: 0.875rem;
   margin-bottom: 0;
+  color: #313131;
+`;
+
+const PackagePrice = styled.label`
+  font-size: 1rem;
+  font-weight: 500;
+  color: #313131;
+  line-height: 20px;
+`;
+
+const PurpleOutlineButton = styled.button`
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 2px solid #d8e4fe;
+  border-radius: 3px;
+  color: #246df8;
 `;
 
 const WorkingContainer = () => (
   <Container alignItems="center">
     <SectionSubTitle>Explore Offers</SectionSubTitle>
     <SectionTitle>Fixed packages ready to start immediately</SectionTitle>
-    <SectionDetails>Get the perfect logo designs in over 90 categories! whatever your business need or budget, we'll help get it done.</SectionDetails>
+    <SectionDetails>
+      Get the perfect logo designs in over 90 categories! whatever your business need or budget, we'll help get it done.
+    </SectionDetails>
     <Flex flexWrap="wrap" mt={4}>
       <Flex width={1 / 4} p={2} justifyContent="center">
         <Package flexDirection="column" justifyContent="flex-start">
@@ -75,7 +94,7 @@ const WorkingContainer = () => (
                 <PackageSubTitle>15 images</PackageSubTitle>
               </Flex>
             </Flex>
-            <label>$240</label>
+            <PackagePrice>$240</PackagePrice>
           </Flex>
         </Package>
       </Flex>
@@ -90,7 +109,7 @@ const WorkingContainer = () => (
                 <PackageSubTitle>15 images</PackageSubTitle>
               </Flex>
             </Flex>
-            <label>$240</label>
+            <PackagePrice>$40</PackagePrice>
           </Flex>
         </Package>
       </Flex>
@@ -105,7 +124,7 @@ const WorkingContainer = () => (
                 <PackageSubTitle>15 images</PackageSubTitle>
               </Flex>
             </Flex>
-            <label>$240</label>
+            <PackagePrice>$240</PackagePrice>
           </Flex>
         </Package>
       </Flex>
@@ -120,7 +139,7 @@ const WorkingContainer = () => (
                 <PackageSubTitle>15 images</PackageSubTitle>
               </Flex>
             </Flex>
-            <label>$240</label>
+            <PackagePrice>$40</PackagePrice>
           </Flex>
         </Package>
       </Flex>
@@ -135,7 +154,7 @@ const WorkingContainer = () => (
                 <PackageSubTitle>15 images</PackageSubTitle>
               </Flex>
             </Flex>
-            <label>$240</label>
+            <PackagePrice>$240</PackagePrice>
           </Flex>
         </Package>
       </Flex>
@@ -150,7 +169,7 @@ const WorkingContainer = () => (
                 <PackageSubTitle>15 images</PackageSubTitle>
               </Flex>
             </Flex>
-            <label>$240</label>
+            <PackagePrice>$24</PackagePrice>
           </Flex>
         </Package>
       </Flex>
@@ -165,7 +184,7 @@ const WorkingContainer = () => (
                 <PackageSubTitle>15 images</PackageSubTitle>
               </Flex>
             </Flex>
-            <label>$240</label>
+            <PackagePrice>$240</PackagePrice>
           </Flex>
         </Package>
       </Flex>
@@ -180,12 +199,15 @@ const WorkingContainer = () => (
                 <PackageSubTitle>15 images</PackageSubTitle>
               </Flex>
             </Flex>
-            <label>$240</label>
+            <PackagePrice>$240</PackagePrice>
           </Flex>
         </Package>
+      </Flex>
+      <Flex justifyContent="center" width={1} mt={20} mb={25}>
+        <PurpleOutlineButton>Browse more packages</PurpleOutlineButton>
       </Flex>
     </Flex>
-  </Container >
+  </Container>
 );
 
 export default WorkingContainer;

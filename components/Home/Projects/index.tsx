@@ -7,13 +7,13 @@ const Project = styled(Flex)`
   min-height: 15vw;
   box-shadow: 0 0 5px rgba(200, 205, 213, 0.18);
   align-items: flex-end;
-  justift-content:flex-start;
+  justift-content: flex-start;
 `;
 
 const SectionTitle = styled.label`
   color: #313131;
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 1px;
 `;
 
@@ -35,8 +35,10 @@ const CategoriesContainer = () => (
   <Container fluid>
     <Flex flexDirection="column" alignItems="center" mb={4}>
       <SectionTitle>Project made by our freelancers</SectionTitle>
-      <SectionDetails>Get the perfect logo designs in over 90 categories! whatever your business need or budget, we'll help get it done.</SectionDetails>
-
+      <SectionDetails>
+        Get the perfect logo designs in over 90 categories! whatever your business need or budget, we'll help get it
+        done.
+      </SectionDetails>
     </Flex>
     <Flex flexWrap="wrap" justifyContent="center" width={1}>
       <Flex width={1 / 5} p={2}>
@@ -67,10 +69,8 @@ const CategoriesContainer = () => (
     </Flex>
     <Flex flexDirection="column" alignItems="center" mt={4}>
       <SectionDetails>Browser More Freelancers</SectionDetails>
-
     </Flex>
-
-  </Container >
+  </Container>
 );
 
 export default CategoriesContainer;

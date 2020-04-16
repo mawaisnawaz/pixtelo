@@ -17,7 +17,6 @@ const TopContainer = styled.div`
 const Packages = styled.div`
   background-color: #f8f9fd;
   padding: 50px 0;
-  
 `;
 
 const ProjectsContainer = styled.div`
@@ -45,6 +44,7 @@ const Banner = styled(Jumbotron)`
 const PurpleButton = styled.button`
   background-color: #246df8;
   padding: 10px 20px;
+  border-radius: 3px;
   border: none;
   color: white;
   width: 200px;
@@ -53,7 +53,7 @@ const PurpleButton = styled.button`
 const SectionTitle = styled.label`
   color: #232630;
   font-size: 1.875rem;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 1rem;
 `;
@@ -65,13 +65,14 @@ const SectionSubTitle = styled.label`
   margin-bottom: 1rem;
 `;
 
-
 const IndexPage = () => (
   <Layout title="Home - Pixtelo">
     <Banner fluid style={{ marginBottom: 0 }}>
       <Flex flexDirection="column" alignItems="center">
         <SectionTitle className="display-3">No More Stock Photos</SectionTitle>
-        <SectionSubTitle className="lead">Professional Photographers and designers ready to build to your image.</SectionSubTitle>
+        <SectionSubTitle className="lead">
+          Professional Photographers and designers ready to build to your image.
+        </SectionSubTitle>
         <PurpleButton>Hire a Freelancer</PurpleButton>
       </Flex>
     </Banner>

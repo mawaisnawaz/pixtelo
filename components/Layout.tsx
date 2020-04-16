@@ -1,20 +1,10 @@
-import * as React from "react";
+import * as React from 'react';
 // import Link from "next/link";
-import Head from "next/head";
+import Head from 'next/head';
 
 import styled from 'styled-components';
 
-
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  Container,
-} from "reactstrap";
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Container } from 'reactstrap';
 
 type Props = {
   title?: string;
@@ -24,7 +14,7 @@ const CustomNavLink = styled(NavLink)`
   font-size: 12px;
   color: #232630 !important;
   font-weight: 400;
-  padding-left:  20px;
+  padding-left: 20px;
 `;
 
 const RightNavBar = styled(Nav)`
@@ -33,6 +23,7 @@ const RightNavBar = styled(Nav)`
 
 const PurpleButton = styled.button`
   background-color: #246df8 !important;
+  font-size: 12px;
   padding: 10px 20px;
   border-radius: 3px;
   border: none;
@@ -45,8 +36,7 @@ const CustomNavItem = styled(NavItem)`
   padding: 0 15px;
 `;
 
-
-const Layout: React.FunctionComponent<Props> = ({ children, title = "This is the default title" }) => {
+const Layout: React.FunctionComponent<Props> = ({ children, title = 'This is the default title' }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -56,7 +46,10 @@ const Layout: React.FunctionComponent<Props> = ({ children, title = "This is the
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet"
+        ></link>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/static/css/responsive.css" rel="stylesheet" />
       </Head>
@@ -88,7 +81,9 @@ const Layout: React.FunctionComponent<Props> = ({ children, title = "This is the
         <div>
           <Navbar color="light" light expand="md">
             <Container>
-              <NavbarBrand href="/"><img src="/static/logo/logo.svg" /></NavbarBrand>
+              <NavbarBrand href="/">
+                <img src="/static/logo/logo.svg" />
+              </NavbarBrand>
               <NavbarToggler onClick={toggle} />
               <Collapse isOpen={isOpen} navbar>
                 <Nav className="mr-auto" navbar>
@@ -98,7 +93,6 @@ const Layout: React.FunctionComponent<Props> = ({ children, title = "This is the
                   <CustomNavItem>
                     <CustomNavLink href="/components/">Find Jobs</CustomNavLink>
                   </CustomNavItem>
-
                 </Nav>
                 <RightNavBar navbar>
                   <CustomNavItem>
