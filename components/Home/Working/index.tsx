@@ -11,6 +11,12 @@ const Container = styled(Flex)`
   flex-direction: column;
   align-items: center;
   justift-content: space-between;
+
+  @media (max-width: 700px) {
+    & {
+      width: 100%;
+    }
+  }
 `;
 
 const CustomContainer = styled(Flex)`
@@ -78,8 +84,8 @@ const BlackOutlineButton = styled.button`
 const WorkingContainer = () => (
   <Container>
     <SectionTitle>How it Works</SectionTitle>
-    <Flex width={1} flexWrap="wrap" justifyContent="space-between">
-      <CustomContainer width={1 / 3} flexDirection="column" alignItems="center" justifyContent="center">
+    <Flex width={1} flexWrap="wrap" justifyContent="space-between" flexDirection={['column', 'row']}>
+      <CustomContainer width={[1, 1 / 3]} flexDirection="column" alignItems="center" justifyContent="center">
         {getIcon(PostSvg)}
         <Title>Post a Job</Title>
         <Details>
@@ -87,7 +93,7 @@ const WorkingContainer = () => (
           magna aliqua.{' '}
         </Details>
       </CustomContainer>
-      <CustomContainer width={1 / 3} flexDirection="column" alignItems="center" justifyContent="center">
+      <CustomContainer width={[1, 1 / 3]} flexDirection="column" alignItems="center" justifyContent="center">
         {getIcon(ProposalSvg)}
         <Title>Get Proposals</Title>
         <Details>
@@ -95,7 +101,7 @@ const WorkingContainer = () => (
           magna aliqua.{' '}
         </Details>
       </CustomContainer>
-      <CustomContainer width={1 / 3} flexDirection="column" alignItems="center" justifyContent="center">
+      <CustomContainer width={[1, 1 / 3]} flexDirection="column" alignItems="center" justifyContent="center">
         {getIcon(DeliveredSvg)}
         <Title>Get Your Job Delivered</Title>
         <Details>

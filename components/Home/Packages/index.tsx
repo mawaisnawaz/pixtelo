@@ -3,9 +3,16 @@ import styled from 'styled-components';
 
 const Container = styled(Flex)`
   width: 1200px;
-  margin: 0 auto !important;
+  margin: 50px auto;
   flex-direction: column;
+  align-items: center;
   justift-content: space-between;
+
+  @media (max-width: 700px) {
+    & {
+      width: 100%;
+    }
+  }
 `;
 
 const Package = styled(Flex)`
@@ -82,8 +89,8 @@ const WorkingContainer = () => (
     <SectionDetails>
       Get the perfect logo designs in over 90 categories! whatever your business need or budget, we'll help get it done.
     </SectionDetails>
-    <Flex flexWrap="wrap" mt={4}>
-      <Flex width={1 / 4} p={2} justifyContent="center">
+    <Flex flexWrap="wrap" mt={4} flexDirection={['column', 'row']}>
+      <Flex width={[1, 1 / 4]} p={2} justifyContent="center">
         <Package flexDirection="column" justifyContent="flex-start">
           <img src="https://via.placeholder.com/250x260" width="100%" />
           <Flex px={2} height={70} alignItems="center" justifyContent="space-between">
@@ -98,7 +105,7 @@ const WorkingContainer = () => (
           </Flex>
         </Package>
       </Flex>
-      <Flex width={1 / 4} p={2} justifyContent="center">
+      <Flex width={[1, 1 / 4]} p={2} justifyContent="center">
         <Package flexDirection="column" justifyContent="flex-start">
           <img src="https://via.placeholder.com/250x260" width="100%" />
           <Flex px={2} height={70} alignItems="center" justifyContent="space-between">
@@ -113,7 +120,7 @@ const WorkingContainer = () => (
           </Flex>
         </Package>
       </Flex>
-      <Flex width={1 / 4} p={2} justifyContent="center">
+      <Flex width={[1, 1 / 4]} p={2} justifyContent="center">
         <Package flexDirection="column" justifyContent="flex-start">
           <img src="https://via.placeholder.com/250x260" width="100%" />
           <Flex px={2} height={70} alignItems="center" justifyContent="space-between">
@@ -128,7 +135,7 @@ const WorkingContainer = () => (
           </Flex>
         </Package>
       </Flex>
-      <Flex width={1 / 4} p={2} justifyContent="center">
+      <Flex width={[1, 1 / 4]} p={2} justifyContent="center">
         <Package flexDirection="column" justifyContent="flex-start">
           <img src="https://via.placeholder.com/250x260" width="100%" />
           <Flex px={2} height={70} alignItems="center" justifyContent="space-between">
@@ -143,7 +150,7 @@ const WorkingContainer = () => (
           </Flex>
         </Package>
       </Flex>
-      <Flex width={1 / 4} p={2} mt={4} justifyContent="center">
+      <Flex width={[1, 1 / 4]} p={2} mt={4} justifyContent="center">
         <Package flexDirection="column" justifyContent="flex-start">
           <img src="https://via.placeholder.com/250x260" width="100%" />
           <Flex px={2} height={70} alignItems="center" justifyContent="space-between">
@@ -158,7 +165,7 @@ const WorkingContainer = () => (
           </Flex>
         </Package>
       </Flex>
-      <Flex width={1 / 4} p={2} mt={4} justifyContent="center">
+      <Flex width={[1, 1 / 4]} p={2} mt={4} justifyContent="center">
         <Package flexDirection="column" justifyContent="flex-start">
           <img src="https://via.placeholder.com/250x260" width="100%" />
           <Flex px={2} height={70} alignItems="center" justifyContent="space-between">
@@ -173,7 +180,7 @@ const WorkingContainer = () => (
           </Flex>
         </Package>
       </Flex>
-      <Flex width={1 / 4} p={2} mt={4} justifyContent="center">
+      <Flex width={[1, 1 / 4]} p={2} mt={4} justifyContent="center">
         <Package flexDirection="column" justifyContent="flex-start">
           <img src="https://via.placeholder.com/250x260" width="100%" />
           <Flex px={2} height={70} alignItems="center" justifyContent="space-between">
@@ -188,7 +195,7 @@ const WorkingContainer = () => (
           </Flex>
         </Package>
       </Flex>
-      <Flex width={1 / 4} p={2} mt={4} justifyContent="center">
+      <Flex width={[1, 1 / 4]} p={2} mt={4} justifyContent="center">
         <Package flexDirection="column" justifyContent="flex-start">
           <img src="https://via.placeholder.com/250x260" width="100%" />
           <Flex px={2} height={70} alignItems="center" justifyContent="space-between">

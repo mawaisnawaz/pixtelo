@@ -65,7 +65,7 @@ const CategoriesContainer = () => (
         <Flex width={5 / 6} mb={4}>
           <img src="/static/logo/logo.svg" />
         </Flex>
-        <Flex width={5 / 6} mb={4} justifyContent="space-between">
+        <Flex width={5 / 6} mb={4} justifyContent="space-between" flexDirection={['column', 'row']}>
           <Flex flexDirection="column">
             <Subtitle>Company</Subtitle>
             <Flex flexDirection="column">
@@ -97,7 +97,7 @@ const CategoriesContainer = () => (
             </Flex>
           </Flex>
         </Flex>
-        <Flex width={5 / 6} mb={4}>
+        <Flex width={5 / 6} mb={4} flexDirection={['column', 'row']}>
           <Flex width={1 / 2} alignItems="center">
             <SocialTitle>Follow Us</SocialTitle>
             {getIcon(FacebookSvg)}

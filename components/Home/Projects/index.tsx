@@ -8,6 +8,12 @@ const Project = styled(Flex)`
   box-shadow: 0 0 5px rgba(200, 205, 213, 0.18);
   align-items: flex-end;
   justift-content: flex-start;
+
+  @media (max-width: 700px) {
+    & {
+      height: 200px;
+    }
+  }
 `;
 
 const SectionTitle = styled.label`
@@ -40,28 +46,28 @@ const CategoriesContainer = () => (
         done.
       </SectionDetails>
     </Flex>
-    <Flex flexWrap="wrap" justifyContent="center" width={1}>
-      <Flex width={1 / 5} p={2}>
+    <Flex flexWrap="wrap" justifyContent="center" width={1} flexDirection={['column', 'row']}>
+      <Flex width={[1, 1 / 5]} p={2}>
         <Project width={1} p={3}>
           <ImgPlaceHolder />
         </Project>
       </Flex>
-      <Flex width={1 / 5} p={2}>
+      <Flex width={[1, 1 / 5]} p={2}>
         <Project width={1} p={3}>
           <ImgPlaceHolder />
         </Project>
       </Flex>
-      <Flex width={1 / 5} p={2}>
+      <Flex width={[1, 1 / 5]} p={2}>
         <Project width={1} p={3}>
           <ImgPlaceHolder />
         </Project>
       </Flex>
-      <Flex width={1 / 5} p={2}>
+      <Flex width={[1, 1 / 5]} p={2}>
         <Project width={1} p={3}>
           <ImgPlaceHolder />
         </Project>
       </Flex>
-      <Flex width={1 / 5} p={2}>
+      <Flex width={[1, 1 / 5]} p={2}>
         <Project width={1} p={3}>
           <ImgPlaceHolder />
         </Project>

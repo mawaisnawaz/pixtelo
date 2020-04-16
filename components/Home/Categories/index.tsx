@@ -7,10 +7,16 @@ import VideoSvg from '../../../static/icons/video-light.svg';
 
 const Container = styled(Flex)`
   width: 1200px;
-  align-items: center;
-  margin: 0 auto !important;
+  margin: 50px auto;
   flex-direction: column;
-  justift-content: center;
+  align-items: center;
+  justift-content: space-between;
+
+  @media (max-width: 700px) {
+    & {
+      width: 100%;
+    }
+  }
 `;
 
 const Category = styled(Flex)`
@@ -57,16 +63,16 @@ const CategoriesContainer = () => (
   <Container flexDirection="column">
     <SectionTitle>Browse Proper Professional Services</SectionTitle>
     <SectionSubTitle>Job Categories</SectionSubTitle>
-    <Flex flexWrap="wrap" justifyContent="center" width={1}>
-      <Category width={1 / 4} flexDirection="column" alignItems="center" justifyContent="center">
+    <Flex flexWrap="wrap" justifyContent="center" width={1} flexDirection={['column', 'row']}>
+      <Category width={[1, 1 / 4]} flexDirection="column" alignItems="center" justifyContent="center">
         {getIcon(PenSvg)}
         <Title>Photography</Title>
       </Category>
-      <Category width={1 / 4} flexDirection="column" alignItems="center" justifyContent="center">
+      <Category width={[1, 1 / 4]} flexDirection="column" alignItems="center" justifyContent="center">
         {getIcon(FeatherSvg)}
         <Title>Graphic Design</Title>
       </Category>
-      <Category width={1 / 4} flexDirection="column" alignItems="center" justifyContent="center">
+      <Category width={[1, 1 / 4]} flexDirection="column" alignItems="center" justifyContent="center">
         {getIcon(VideoSvg)}
         <Title>Video &amp; Animation</Title>
       </Category>

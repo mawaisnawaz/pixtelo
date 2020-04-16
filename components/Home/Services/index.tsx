@@ -6,10 +6,16 @@ import IdCardSvg from '../../../static/icons/id-card-light.svg';
 
 const Container = styled(Flex)`
   width: 1200px;
-  align-items: center;
-  margin: 0 auto !important;
+  margin: 50px auto;
   flex-direction: column;
-  justift-content: center;
+  align-items: center;
+  justift-content: space-between;
+
+  @media (max-width: 700px) {
+    & {
+      width: 100%;
+    }
+  }
 `;
 
 const CustomContainer = styled(Flex)`
@@ -66,8 +72,8 @@ const WorkingContainer = () => (
   <Container>
     <SectionTitle>Find freelance services for your project today</SectionTitle>
     <SectionSubTitle>We've have got you covered for all your business needs</SectionSubTitle>
-    <Flex width={1} flexWrap="wrap" justifyContent="center" mt={4} mb={50}>
-      <CustomContainer width={1 / 4} flexDirection="column" alignItems="center" justifyContent="center">
+    <Flex width={1} flexWrap="wrap" justifyContent="center" mt={4} mb={50} flexDirection={['column', 'row']}>
+      <CustomContainer width={[1, 1 / 4]} flexDirection="column" alignItems="center" justifyContent="center">
         {getIcon(IdCardSvg)}
         <Title>Verified Freelancers</Title>
         <Details>
@@ -75,10 +81,10 @@ const WorkingContainer = () => (
           magna aliqua.{' '}
         </Details>
       </CustomContainer>
-      <CustomContainer width={2 / 4} flexDirection="column" alignItems="center" justifyContent="center">
+      <CustomContainer width={[1, 2 / 4]} flexDirection="column" alignItems="center" justifyContent="center">
         <img src="/static/other/service.svg" width="350px" />
       </CustomContainer>
-      <CustomContainer width={1 / 4} flexDirection="column" alignItems="center" justifyContent="center">
+      <CustomContainer width={[1, 1 / 4]} flexDirection="column" alignItems="center" justifyContent="center">
         {getIcon(SmileSvg)}
         <Title>Satisfaction Guranteed</Title>
         <Details>
